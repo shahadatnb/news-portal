@@ -1,0 +1,14 @@
+{
+    "version": 2,
+    "settings": {
+        "color": {
+            "custom": true,
+            "palette": [
+                { "slug": "black", "color": "#000000", "name": "Black" },
+                { "slug": "white", "color": "#ffffff", "name": "White" },
+                { "slug": "red", "color": "#e74c3c", "name": "Red" },
+                { "slug": "blue", "color": "#3498db", "name": "Blue" }
+            ]
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Hind Siliguri', sans-serif;
+    background: #FAF6EE;
+    color: #1A1A1A;
+  }
+  
+  .font-display {
+    font-family: 'Tiro Bangla', serif;
+  }
+  
+  .font-mast {
+    font-family: 'Tiro Bangla', serif;
+  }
+  
+  .font-utility {
+    font-family: 'Noto Sans Bengali', sans-serif;
+    letter-spacing: 0.02em;
+  }
+  
+  .hairline {
+    border-color: #B08D57;
+  }
+  
+  ::selection {
+    background: #C8102E;
+    color: #FAF6EE;
+  }
+  
+  a:focus-visible, 
+  button:focus-visible {
+    outline: 3px solid #0C3B2E;
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .ticker-track {
+    animation: ticker 28s linear infinite;
+  }
+  
+  @keyframes ticker {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .ticker-track {
+      animation: none;
+    }
+  }
+}
